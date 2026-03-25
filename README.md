@@ -1,1 +1,89 @@
-# HeartRisk-App
+# 🫀 Heart Risk Prediction System (CardioFusion-X)
+
+An advanced **AI-powered cardiovascular risk prediction system** that combines clinical data and physiological signals to provide **accurate, explainable, and real-time heart risk assessment**.
+
+---
+
+## 🚀 Overview
+
+Cardiovascular diseases are one of the leading causes of death globally. Early detection is crucial, but traditional systems rely on limited data and provide only binary outputs.
+
+This project introduces a **multimodal heart risk prediction system** that:
+
+- Uses **Machine Learning + Deep Learning**
+- Combines **clinical + physiological (PPG) data**
+- Provides **continuous risk percentage**
+- Includes **Explainable AI (SHAP)**
+- Offers a **visual interactive dashboard**
+
+---
+
+## 🧠 Key Features
+
+- 🔬 **Multimodal Prediction**
+  - Clinical Model (ML)
+  - PPG Model (Deep Learning)
+  - Fusion Neural Network
+
+- 📊 **Continuous Risk Output**
+  - Example: `36.65% risk`
+  - Categorized into Low / Moderate / High
+
+- 🔍 **Explainable AI (SHAP)**
+  - Feature impact visualization
+  - Understand *why* a prediction was made
+
+- 📈 **Interactive UI**
+  - Risk gauge (speedometer)
+  - Color-coded severity
+  - Real-time results
+
+- ⚡ **Demo Mode**
+  - One-click Low / Moderate / High test inputs
+
+---
+
+
+---
+
+## 📊 Datasets Used
+
+1. **Cardiovascular Disease Dataset (Kaggle)**  
+   - ~70,000 patient records  
+   - Clinical + lifestyle features  
+
+2. **Framingham Heart Study Dataset**  
+   - Long-term cardiovascular risk data  
+
+3. **UCI Heart Disease Dataset**  
+   - Standard benchmark dataset  
+
+---
+
+## ⚙️ Installation
+
+### 1️⃣ Clone the repository
+
+```bash
+git clone https://github.com/stud-addy-vans/HeartRisk-App.git
+cd HeartRiskApp/backend
+```
+
+## Create virtual environment (recommended)
+```
+python -m venv venv
+venv\Scripts\activate   # Windows
+```
+---
+
+## Run Backend
+```
+python app.py
+```
+
+## Run Frontend
+```
+frontend/index.html
+```
+---
+
