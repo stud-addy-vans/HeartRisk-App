@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Heart Risk Prediction</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="container">
+        <h1>❤️ Heart Risk Prediction</h1>
+        <p class="subtitle">Clinical + PPG based AI prediction</p>
+
+        <div class="demo-buttons">
+            <button type="button" id="lowBtn" class="low">Low Risk Demo</button>
+            <button type="button" id="midBtn" class="mid">Moderate Risk Demo</button>
+            <button type="button" id="highBtn" class="high">High Risk Demo</button>
+        </div>
+
+        <form id="riskForm">
+
+            <h2>Clinical Details</h2>
+            <div class="grid">
+                <input type="number" placeholder="Age" id="age" required>
+                <select id="gender">
+                    <option value="1">Male</option>
+                    <option value="0">Female</option>
+                </select>
+                <input type="number" placeholder="Height (cm)" id="height" required>
+                <input type="number" placeholder="Weight (kg)" id="weight" required>
+
+                <div class="bmi-box">
+                    BMI: <span id="bmiValue">--</span>
+                    <span id="bmiStatus"></span>
+                </div>
+
+                <input type="number" placeholder="Blood Pressure" id="bp" required>
+                <input type="number" placeholder="Cholesterol" id="cholesterol" required>
+                <input type="number" placeholder="Glucose (1–3)" id="glucose" required>
+                <select id="smoking">
+                    <option value="0">Non-Smoker</option>
+                    <option value="1">Smoker</option>
+                </select>
+                <select id="alcohol">
+                    <option value="0">No Alcohol</option>
+                    <option value="1">Alcohol</option>
+                </select>
+                <select id="activity">
+                    <option value="1">Physically Active</option>
+                    <option value="0">Inactive</option>
+                </select>
+            </div>
+
+            <h2>PPG Details</h2>
+            <div class="grid">
+                <input type="number" placeholder="Heart Rate (bpm)" id="heart_rate" required>
+                <input type="number" placeholder="SpO₂ (%)" id="spo2" required>
+                <input type="number" placeholder="HRV (ms)" id="hrv" required>
+                <input type="number" step="0.1" placeholder="Pulse Amplitude" id="pulse_amplitude" required>
+            </div>
+
+            <button type="submit">Predict Risk</button>
+        </form>
+
+        <div id="result" class="result hidden">
+            <h2>Prediction Result</h2>
+            <p>Clinical Risk: <span id="clinicalRisk"></span>%</p>
+            <p>PPG Risk: <span id="ppgRisk"></span>%</p>
+            <p class="final">Final Heart Risk: <span id="finalRisk"></span>%</p>
+            <div class="gauge-container">
+
+                <svg width="320" height="180" viewBox="0 0 320 180">
+
+                    <!-- LOW 0–30% : 54° -->
+                    <path d="M40 160 A120 120 0 0 1 110 60" stroke="#2ecc71" stroke-width="26" fill="none" />
+
+                    <!-- MODERATE 30–60% : 54° -->
+                    <path d="M110 60 A120 120 0 0 1 210 60" stroke="#f1c40f" stroke-width="26" fill="none" />
+
+                    <!-- HIGH 60–100% : 72° -->
+                    <path d="M210 60 A120 120 0 0 1 280 160" stroke="#e74c3c" stroke-width="26" fill="none" />
+
+                    <!-- NEEDLE -->
+                    <line id="needle" x1="160" y1="160" x2="160" y2="55" stroke="white" stroke-width="4"
+                        transform="rotate(-90 160 160)" style="transition: transform 1.2s ease-in-out" />
+
+                    <!-- CENTER -->
+                    <circle cx="160" cy="160" r="6" fill="white" />
+
+                </svg>
+
+                <div class="gauge-value" id="gaugeValue">0%</div>
+
+                <div class="labels">
+                    <span>Low</span>
+                    <span>Moderate</span>
+                    <span>High</span>
+                </div>
+
+            </div>
+
+            <div id="riskLevel" class="risk-box"></div>
+        </div>
+
+        <div class="explain-box">
+            <h3>Why this risk?</h3>
+            <ul id="explainList"></ul>
+        </div>
+
+        <div class="recommend-box">
+            <h3>Doctor Recommendations</h3>
+            <ul id="recommendList"></ul>
+        </div>
+
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
