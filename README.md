@@ -1,4 +1,4 @@
-# 🫀 Heart Risk Prediction System (CardioFusion-X)
+# 🫀 Heart Risk Prediction System (HeartRisk-App)
 
 An advanced **AI-powered cardiovascular risk prediction system** that combines clinical data and physiological signals to provide **accurate, explainable, and real-time heart risk assessment**.
 
@@ -129,7 +129,7 @@ If you use this project in your research, please cite:
 ```bibtex
 @misc{HeartRiskApp2026,
   author       = {Aditya Pratap Singh and Pooja Rai},
-  title        = {Heart Risk Prediction System (CardioFusion-X)},
+  title        = {Heart Risk Prediction System (HeartRisk-App)},
   year         = {2026},
   publisher    = {GitHub},
   journal      = {GitHub Repository},
