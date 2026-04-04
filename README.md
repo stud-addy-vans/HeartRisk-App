@@ -87,3 +87,53 @@ frontend/index.html
 ```
 ---
 
+## 🧪 Usage
+
+1. Enter patient clinical values (age, cholesterol, glucose, BMI, etc.) in the frontend form.  
+2. The backend computes engineered biomarkers (Pulse Pressure, MRC, ABPI).  
+3. The fusion model generates a continuous risk percentage.  
+4. SHAP explainability highlights the most influential features.  
+5. The dashboard displays risk level (Low / Moderate / High) with interactive visuals.  
+
+---
+
+
+---
+
+## 🤝 Contributing
+
+Contributions are welcome!  
+- Fork the repository  
+- Create a new branch (`feature-xyz`)  
+- Commit changes and open a Pull Request  
+
+---
+
+## 📜 License
+
+This project is released under the **MIT License**. You are free to use, modify, and distribute with proper attribution.  
+
+---
+
+## 📧 Contact
+
+For questions or collaboration:  
+- **Aditya Pratap Singh** – adityapratap2301@gmail.com  
+- **Pooja Rai** – prai50317@gmail.com  
+
+---
+
+## 📖 Citation
+
+If you use this project in your research, please cite:
+
+```bibtex
+@misc{HeartRiskApp2026,
+  author       = {Aditya Pratap Singh and Pooja Rai},
+  title        = {Heart Risk Prediction System (CardioFusion-X)},
+  year         = {2026},
+  publisher    = {GitHub},
+  journal      = {GitHub Repository},
+  howpublished = {\url{https://github.com/stud-addy-vans/HeartRisk-App}}
+}
+
