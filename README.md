@@ -119,7 +119,6 @@ This project is released under the **MIT License**. You are free to use, modify,
 
 For questions or collaboration:  
 - **Aditya Pratap Singh** – adityapratap2301@gmail.com  
-- **Pooja Rai** – prai50317@gmail.com  
 
 ---
 
